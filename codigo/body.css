@@ -118,12 +118,12 @@ body {
   background-position: center;
 }
 
-.menu1-grid .item:nth-child(1) .img { background-image: url("img/cheesecake.jpg"); }
-.menu1-grid .item:nth-child(2) .img { background-image: url("img/tiramisu.jpg"); }
-.menu1-grid .item:nth-child(3) .img { background-image: url("img/lemonpie.jpg"); }
-.menu1-grid .item:nth-child(4) .img { background-image: url("img/brownie.jpg"); }
-.menu1-grid .item:nth-child(5) .img { background-image: url("img/oreo.jpg"); }
-.menu1-grid .item:nth-child(6) .img { background-image: url("img/tita.jpg"); }
+.menu1-grid .item:nth-child(1) .img { background-image: url(""); }
+.menu1-grid .item:nth-child(2) .img { background-image: url(""); }
+.menu1-grid .item:nth-child(3) .img { background-image: url(""); }
+.menu1-grid .item:nth-child(4) .img { background-image: url(""); }
+.menu1-grid .item:nth-child(5) .img { background-image: url(""); }
+.menu1-grid .item:nth-child(6) .img { background-image: url(""); }
 
 .menu2-grid .item:nth-child(1) .img {background-image: url("");}
 .menu2-grid .item:nth-child(2) .img {background-image: url("");}
