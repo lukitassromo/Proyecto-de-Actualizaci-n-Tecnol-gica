@@ -71,7 +71,7 @@ body {
 }
 
 .promo-card {
-  background-color: #f9f9f9;
+  background-color: #bdd9e1;
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid black;
@@ -83,7 +83,7 @@ body {
 .promo-img {
   width: 60px;
   height: 60px;
-  background-color: #bdd9e1;
+  border: 1px#bdd9e1;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
@@ -108,7 +108,7 @@ body {
 }
 
 .item {
-  background-color: #f9f9f9;
+  background-color: #bdd9e1;
   border-radius: 8px;
   padding: 1rem;
   border: 1px solid black;
@@ -132,12 +132,12 @@ body {
 .menu1-grid .item:nth-child(5) .img { background-image: url("img/oreo.jpg"); }
 .menu1-grid .item:nth-child(6) .img { background-image: url("img/tita.jpg"); }
 
-.menu2-grid .item:nth-child(1) .img {background-image: url();}
-.menu2-grid .item:nth-child(2) .img {background-image: url();}
-.menu2-grid .item:nth-child(3) .img {background-image: url();}
-.menu2-grid .item:nth-child(4) .img {background-image: url();}
-.menu2-grid .item:nth-child(5) .img {background-image: url();}
-.menu2-grid .item:nth-child(6) .img {background-image: url();}
+.menu2-grid .item:nth-child(1) .img {background-image: url("");}
+.menu2-grid .item:nth-child(2) .img {background-image: url("");}
+.menu2-grid .item:nth-child(3) .img {background-image: url("");}
+.menu2-grid .item:nth-child(4) .img {background-image: url("");}
+.menu2-grid .item:nth-child(5) .img {background-image: url("");}
+.menu2-grid .item:nth-child(6) .img {background-image: url("");}
 
 .badge {
   position: absolute;
@@ -151,13 +151,14 @@ body {
 }
 
 select, option {
-  background-color: #f4f9fa;
+  background-color: #bdd9e1;
   color: #222;
   border: 1px solid #0099dd;
   border-radius: 5px;
   padding: 5px;
   font-size: 1em;
   appearance: none;
+  
 }
 
 select:focus {
