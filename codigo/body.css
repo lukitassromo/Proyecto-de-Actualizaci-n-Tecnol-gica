@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5fbfd;
+  color: #000;
+}
+
+.header {
+  background-color: #e6f1f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.search {
+  padding: 0.25rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero-img {
+  width: 300px;
+  height: 250px;
+  background-color: #bdd9e1;
+  border-radius: 10px;
+  background-image: url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.highlight {
+  background-color: #0098db;
+  color: #fff;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.promociones {
+  text-align: center;
+  padding: 2rem;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.promo-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.promo-img {
+  width: 60px;
+  height: 60px;
+  background-color: #bdd9e1;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-card:nth-child(1) .promo-img { background-image: url("img/promo1.jpg"); }
+.promo-card:nth-child(2) .promo-img { background-image: url("img/promo2.jpg"); }
+.promo-card:nth-child(3) .promo-img { background-image: url("img/promo3.jpg"); }
+.promo-card:nth-child(4) .promo-img { background-image: url("img/promo4.jpg"); }
+.promo-card:nth-child(5) .promo-img { background-image: url("img/promo5.jpg"); }
+
+.menu1,.menu2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.menu1-grid, .menu2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid black;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 150px;
+  background-color: #bdd9e1;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu1-grid .item:nth-child(1) .img { background-image: url("img/cheesecake.jpg"); }
+.menu1-grid .item:nth-child(2) .img { background-image: url("img/tiramisu.jpg"); }
+.menu1-grid .item:nth-child(3) .img { background-image: url("img/lemonpie.jpg"); }
+.menu1-grid .item:nth-child(4) .img { background-image: url("img/brownie.jpg"); }
+.menu1-grid .item:nth-child(5) .img { background-image: url("img/oreo.jpg"); }
+.menu1-grid .item:nth-child(6) .img { background-image: url("img/tita.jpg"); }
+
+.menu2-grid .item:nth-child(1) .img {background-image: url();}
+.menu2-grid .item:nth-child(2) .img {background-image: url();}
+.menu2-grid .item:nth-child(3) .img {background-image: url();}
+.menu2-grid .item:nth-child(4) .img {background-image: url();}
+.menu2-grid .item:nth-child(5) .img {background-image: url();}
+.menu2-grid .item:nth-child(6) .img {background-image: url();}
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #0098db;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+select, option {
+  background-color: #f4f9fa;
+  color: #222;
+  border: 1px solid #0099dd;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  appearance: none;
+}
+
+select:focus {
+  outline: 2px solid #0099dd;
+}
+
+footer {
+  background-color: #e6f1f5;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.socials span {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .nav {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .promo-card, .item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo-img, .img {
+    height: 100px;
+  }
+
+  .search {
+    width: 100%;
+  }
+}
