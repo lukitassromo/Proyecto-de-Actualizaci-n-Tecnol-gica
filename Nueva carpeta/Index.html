@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martins Cafetería</title>
+  <link rel="stylesheet" href="body.css" />
+  <link rel="stylesheet" href="editor.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🔵 Martins cafetería</div>
+    <button id="toggleEditorBtn" style="background:#0098db;color:#fff;border:none;padding:0.5em 1em;border-radius:5px;cursor:pointer;">Editar</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-img"></div>
+    <div class="hero-text">
+      <p>El mejor plan<br />está en <span class="highlight">Martins</span></p>
+    </div>
+  </section>
+
+  <section class="promociones">
+    <h2>Promociones</h2>
+    <p>Promociones del mes</p>
+    <div class="promo-grid">
+      <div class="promo-card">
+        <div class="promo-img"></div>
+        <div>
+          <h4>La re puta madre</h4>
+          <p>Cocaolita cocaolita cocaolita</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img"></div>
+        <div>
+          <h4>La concha de la lora</h4>
+          <p>Cocaolita cocaolita cocaolita</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img"></div>
+        <div>
+          <h4>La re puta madre</h4>
+          <p>Cocaolita cocaolita cocaolita</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img"></div>
+        <div>
+          <h4>La concha de la lora</h4>
+          <p>Cocaolita cocaolita cocaolita</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img"></div>
+        <div>
+          <h4>La re puta madre</h4>
+          <p>Cocaolita cocaolita cocaolita</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu1">
+    <h2>Para comer</h2>
+    <p>Cocaolita cocaolita cocaolita</p>
+    <div class="menu1-grid">
+      <div class="item"><div class="badge">Más vendido</div><div class="img"></div><p>Cheesecake<br />$3.00</p></div>
+      <div class="item"><div class="img"></div><p>Tiramisú<br />$3.00</p></div>
+      <div class="item"><div class="img"></div><p>Lemonpie<br />$3.00</p></div>
+      <div class="item"><div class="img"></div><p>Brownie<br />$4.50</p></div>
+      <div class="item"><div class="img"></div><p>Torta oreo<br />$4.50</p></div>
+      <div class="item"><div class="img"></div><p>Tarta tita<br />$4.50</p></div>
+    </div>
+  </section>
+
+  <section class="menu2">
+    <h2>Para tomar</h2>
+    <p>Cocaolita cocaolita cocaolita</p>
+    <div class="menu2-grid">
+      <div class="item"><div class="img"></div><p>Café capuchino<br />$3.00</p><select><option>Pequeño</option><option>Mediano</option> <option>Grande</option></select></div>
+      <div class="item"><div class="badge">Más vendido</div><div class="img"></div><p>Café capuchino<br />$3.00</p><select><option>Pequeño</option><option>Mediano</option> <option>Grande</option></select></div>
+      <div class="item"><div class="img"></div><p>Café capuchino<br />$3.00</p><select><option>Pequeño</option> <option>Mediano</option> <option>Grande</option></select></div>
+      <div class="item"><div class="img"></div><p>Café capuchino<br />$3.00</p><select><option>Pequeño</option><option>Mediano</option> <option>Grande</option></select></div>
+      <div class="item"><div class="img"></div><p>Café capuchino<br />$3.00</p><select><option>Pequeño</option><option>Mediano</option> <option>Grande</option></select></div>
+      <div class="item"><div class="img"></div><p>Café capuchino<br />$3.00</p><select><option>Pequeño</option><option>Mediano</option> <option>Grande</option></select></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Rondeau 1999, Córdoba, Argentina</p>
+    <div class="socials">
+      <span>📘</span>
+      <span>📷</span>
+      <span>📱</span>
+    </div>
+  </footer>
+
+  <!-- Panel de edición oculto por defecto -->
+  <div id="editorPanel" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;overflow:auto;background:rgba(0,0,0,0.25);z-index:10000;">
+    <div style="background:#fff;max-width:600px;margin:2rem auto;padding:2rem;border-radius:10px;box-shadow:0 2px 12px #0002;position:relative;">
+      <button id="closeEditorBtn" style="position:absolute;top:1rem;right:1rem;background:#d32f2f;color:#fff;border:none;border-radius:50%;width:2em;height:2em;font-size:1.2em;cursor:pointer;">×</button>
+      <h2>Panel de Edición</h2>
+      <label for="seccion">Sección a editar</label>
+      <select id="seccion">
+        <option value="hero">Hero</option>
+        <option value="menu1">Para comer</option>
+        <option value="menu2">Para tomar</option>
+        <option value="promos">Promociones</option>
+      </select>
+      <div id="editorContenido"></div>
+    </div>
+  </div>
+
+  <script src="editor.js"></script>
+</body>
+</html>
